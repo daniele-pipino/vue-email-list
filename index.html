@@ -22,7 +22,7 @@
 <body>
     <div id="app">
         <ul>
-            <li v-for="address in email">{{address}}</li>
+            <li v-if="email.length === 10" v-for="address in email">{{address}}</li>
         </ul>
     </div>
     <script src="./js/main.js"></script>
